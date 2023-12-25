@@ -1,0 +1,245 @@
+@charset "utf-8"; /* 设置字符编码为UTF-8 */
+
+*{ margin:0; padding:0;} /* 将所有元素的外边距和内边距设置为0 */
+
+a{ text-decoration:none;} /* 移除链接的下划线样式 */
+
+li{list-style-type:none;} /* 移除列表项的默认样式 */
+
+/* 设置全局文本行高为1.6 */
+body {
+  line-height: 1.6;
+}
+
+/* 悬浮按钮样式 */
+button {
+  position: fixed; /* 固定定位，相对于浏览器窗口 */
+  top: 20px; /* 距离顶部20像素 */
+  right: 20px; /* 距离右侧20像素 */
+  padding: 10px; /* 内边距为10像素 */
+  font-size: 16px; /* 字体大小为16像素 */
+  background-color: transparent; /* 背景颜色透明 */
+  color: #555; /* 字体颜色为深灰色 */
+  border: none; /* 移除边框 */
+  border-radius: 50%; /* 圆形边框半径为50% */
+  cursor: pointer; /* 鼠标悬停时显示手型光标 */
+  transition: background-color 0.3s ease; /* 添加背景颜色变化的过渡效果 */
+}
+
+/* 悬浮按钮悬停时的样式 */
+button:hover {
+  background-color: #45a049; /* 鼠标悬停时的背景颜色 */
+}
+
+body{
+  background:url(../images/body_bg.jpg) top center fixed; /* 设置页面背景图片，位置在顶部居中 */
+  background-attachment:fixed; /* 固定背景图片 */
+  font-size:14px; /* 设置字体大小为14像素 */
+  font-family:Arial; /* 设置字体族为Arial */
+}
+
+/* 头部样式 */
+.head{
+  width:1100px; /* 设置头部宽度 */
+  height:60px; /* 设置头部高度 */
+  padding-top:0px; /* 设置头部顶部内边距 */
+  margin:auto; /* 居中显示 */
+  background-color:rgba(255,255,255,0.8); /* 设置背景颜色为白色，透明度为0.8 */
+}
+
+.head .logo{
+  float:left; /* 往左浮动 */
+}
+
+.head .logo img{
+  height:70px; /* 设置logo图片高度 */
+  display:block; /* 将图片设置为块级元素 */
+  margin-right:20px; /* 设置右侧外边距 */
+  margin-left:20px; /* 设置左侧外边距 */
+}
+
+/* 导航栏样式 */
+.nav{
+  width:1100px; /* 设置导航栏宽度 */
+  height: 70px; /* 设置导航栏高度 */
+  margin: auto; /* 居中显示 */
+  background: #000; /* 设置背景颜色为黑色 */
+}
+
+.nav li{
+  float:left; /* 往左浮动 */
+  margin-left:30px; /* 设置左侧外边距 */
+}
+
+.nav li a{
+  font-size:20px; /* 设置字体大小 */
+  color:#ddd; /* 设置字体颜色为灰色 */
+  line-height:70px; /* 设置行高为导航栏高度 */
+}
+
+.nav li a:hover{
+  color:#fbf302; /* 设置鼠标悬停时字体颜色为黄色 */
+  text-decoration:none; /* 移除悬停时的文本装饰 */
+
+}
+
+/* 中间内容样式 */
+.main{
+  width:1000px; /* 设置中间内容区域宽度 */
+  padding:50px; /* 设置内边距 */
+  overflow:hidden; /* 溢出内容隐藏 */
+  margin:auto; /* 居中显示 */
+  background-color:rgba(255,255,255,0.8); /* 设置背景颜色为白色，透明度为0.8 */
+}
+
+.main_left{
+  width:200px; /* 设置左侧内容区域宽度 */
+  height:auto; /* 高度自适应 */
+  float:left; /* 往左浮动 */
+}
+
+.main_left .pic{
+  width:190px; /* 设置图片容器宽度 */
+  border:5px solid #000; /* 设置边框为黑色实线，宽度为5像素 */
+}
+
+.main_left .pic img{
+  width:190px; /* 设置图片宽度 */
+  display:block; /* 将图片设置为块级元素 */
+}
+
+
+
+.left_nav{
+  width:160px; /* 设置左侧导航宽度 */
+  height:auto; /* 高度自适应 */
+  margin-top:30px; /* 设置上方外边距 */
+}
+
+.left_nav li{
+
+  padding-left:30px; /* 设置左侧内边距 */
+  line-height:50px; /* 设置行高 */
+}
+
+.left_nav li a{
+  font-size:16px; /* 设置字体大小 */
+  color:#666; /* 设置字体颜色为灰色 */
+}
+
+.left_nav li a:hover{
+  color:#000; /* 设置鼠标悬停时字体颜色为黑色 */
+}
+
+.main_right{
+  width:760px; /* 设置右侧内容区域宽度 */
+  height:auto; /* 高度自适应 */
+  float:left; /* 往左浮动 */
+  margin-left:40px; /* 设置左侧外边距 */
+}
+
+.main_right h2{
+  font-size:22px; /* 设置标题字体大小 */
+  color:#333; /* 设置标题字体颜色为深灰色 */
+  line-height:36px; /* 设置标题行高 */
+  text-align:center; /* 设置标题居中显示 */
+}
+
+.main_right .jianjie img{
+  width:100%; /* 设置图片宽度占满父容器 */
+}
+
+.main_right .jianjie p{
+  font-size:16px; /* 设置段落字体大小 */
+  color:#333;
+}
+
+.main_right .video{
+  width: 100%;
+}
+
+/* 底部样式 */
+.foot {
+  width: 1100px; /* 设置底部宽度 */
+  padding-top: 20px; /* 顶部内边距 */
+  padding-bottom: 20px; /* 底部内边距 */
+  margin: auto; /* 水平居中显示 */
+  background: #000; /* 背景颜色为黑色 */
+  clear: both; /* 清除浮动 */
+}
+
+.foot p {
+  font-size: 16px; /* 字体大小 */
+  color: #fff; /* 字体颜色为白色 */
+  line-height: 24px; /* 行高为24像素 */
+  text-align: center; /* 文本居中显示 */
+}
+
+/* 景点介绍样式 */
+.jingdian li {
+  height: 150px; /* 设置每个景点介绍项的高度 */
+  padding: 15px 0; /* 上下内边距15像素，左右内边距为0 */
+  border-bottom: 1px dashed #999; /* 底部边框为虚线，颜色为灰色 */
+}
+
+.jingdian li img {
+  width: 200px; /* 图片宽度 */
+  height: 150px; /* 图片高度 */
+  float: left; /* 左浮动 */
+  margin-right: 20px; /* 右外边距20像素 */
+}
+
+.jingdian li h3 {
+  margin-bottom: 10px; /* 标题底部外边距为10像素 */
+}
+
+/* 风景欣赏样式 */
+.fengjing img {
+  display: block; /* 将图片设置为块级元素 */
+  width: 360px; /* 图片宽度 */
+  height: 240px; /* 图片高度 */
+  float: left; /* 左浮动 */
+  margin: 10px; /* 外边距为10像素 */
+}
+
+/* 美食推荐样式 */
+.meishi {
+  width: 720px; /* 推荐区域宽度 */
+  margin: auto; /* 水平居中显示 */
+}
+
+.meishi li {
+  width: 220px; /* 推荐项宽度 */
+  float: left; /* 左浮动 */
+  margin: 10px; /* 外边距为10像素 */
+}
+
+.meishi li img {
+  width: 220px; /* 图片宽度 */
+  height: 220px; /* 图片高度 */
+}
+
+.meishi li p {
+  text-align: center; /* 文本居中显示 */
+}
+
+.toptop{
+  width: 50px;
+  position: fixed; 
+  bottom: 30px; 
+  left: 30px; 
+  padding: 0px; 
+  font-size: 40px; 
+  background-color:transparent; 
+  color:#000; 
+  cursor: pointer;
+  
+
+}
+
+span{
+  font-size: 16px;
+  font-style: normal;
+  color:#333;
+  font-family: 幼圆;
+}
